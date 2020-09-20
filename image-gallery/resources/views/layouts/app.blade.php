@@ -21,7 +21,9 @@
                 @include('components.nav_bar')
             </nav>
         </div>
-
-        @yield('content')
+        <div>
+            <br></br>
+            @yield('content')
+        </div>
     </body>
 </html>

@@ -7,7 +7,7 @@
     <table class="table table-hover">
         <thead>
             <tr>
-                <th class="cs-p-1">Name</th>
+                <th class="cs-p-1">Nom</th>
                 <th class="cs-p-1">Image</th>
             </tr>
         </thead>
@@ -15,15 +15,17 @@
         @forelse($images as $image)
             <tr>
                 <td class="cs-p-1">{{ $image->name }}</td>
-                <td class="cs-p-1"><a href="{{ $image->image }}">View Image</a></td>
+                <td class="cs-p-1">
+                    <img src="{{ url($image->image) }}"/>
+                </td>
             </tr>
             @empty
-            <p>No Images at the moment</p>
+            <p>Pas d'image</p>
         @endforelse
     </table>
 </div>
 @else
-test
+<script>window.location = "/login";</script>
 @endif
 
 @endsection

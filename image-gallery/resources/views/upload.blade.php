@@ -1,9 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-
-<div class="panel-body">
-test
-
+@include('components.upload_form') 
 @endsection
-

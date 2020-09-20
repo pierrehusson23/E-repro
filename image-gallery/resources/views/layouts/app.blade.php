@@ -16,9 +16,9 @@
     </head>
 
     <body>
-        <div class="container">
-            <nav class="navbar navbar-default">
-                <!-- Navbar Contents -->
+        <div>
+            <nav>
+                @include('components.nav_bar')
             </nav>
         </div>
 

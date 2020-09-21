@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <h2 class="card-header w-100 m-1 text-center">Upload Image</h2>
+        <h2 class="card-header w-100 m-1 text-center">Uploader une image</h2>
     </div>
     <div class="row justify-content-center">
         <form class="m-2" method="post" action="/file-upload" enctype="multipart/form-data">

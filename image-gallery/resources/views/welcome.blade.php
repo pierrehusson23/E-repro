@@ -8,7 +8,8 @@
         <div class="container">
             <h1>Galerie d'images</h1>
             @auth
-            <a href="{{ url('view-uploads') }}" class="btn btn-secondary my-2">Galerie</a>
+            <a href="{{ url('view-uploads') }}" class="btn btn-secondary my-2">Voir les images</a>
+            <a href="{{ url('file-upload') }}" class="btn btn-secondary my-2">Uploader une image</a>
             @else
             <a href="{{ route('login') }}" class="btn btn-secondary my-2">Se connecter</a>
 
